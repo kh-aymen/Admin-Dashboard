@@ -100,13 +100,14 @@ const SideBar = ({
     setIsSideBarOpen,
 }) => {
     const { pathname } = useLocation()
-    const [active, setActive] = useState("")
+    const [active, setActive] = useState(navItems[0].text.toLowerCase())
     const navigate = useNavigate()
     const theme = useTheme()
 
+
     useEffect(() => {
-        setActive(pathname.substring())
-    }, [pathname])
+        setActive(pathname.substring(1));
+    }, [pathname]);
 
     return (
         <Box component='nav'>

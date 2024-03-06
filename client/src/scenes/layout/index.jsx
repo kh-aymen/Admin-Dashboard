@@ -20,12 +20,14 @@ const Layout = () => {
                 isNonMobile={isNonMobile}
                 drawerWidth="250px"
                 isSideBarOpen={isSideBarOpen}
-                setIsSideBarOpen={setIsSideBarOpen} />
+                setIsSideBarOpen={setIsSideBarOpen}
+            />
             <Box flexGrow={1}>
                 <NavBar
                     user={data || {}}
                     isSideBarOpen={isSideBarOpen}
-                    setIsSideBarOpen={setIsSideBarOpen} />
+                    setIsSideBarOpen={setIsSideBarOpen}
+                />
                 <Outlet />
             </Box>
         </Box>

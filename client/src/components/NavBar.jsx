@@ -10,7 +10,7 @@ import {
 import FlexBetween from '../components/FlexBetween'
 import { useDispatch } from 'react-redux'
 import { setMode } from '../state'
-import profileImage  from '../assets/ProfileImage.jpg'
+import profileImage from '../assets/ProfileImage.jpg'
 import { AppBar, Box, Button, IconButton, InputBase, Menu, MenuItem, Toolbar, Typography, useTheme } from '@mui/material'
 
 const NavBar = ({ user, isSideBarOpen, setIsSideBarOpen }) => {
@@ -101,7 +101,7 @@ const NavBar = ({ user, isSideBarOpen, setIsSideBarOpen }) => {
                             onClose={handleClose}
                             anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
                         >
-                                <MenuItem onClick={handleClick}>LogOut</MenuItem>
+                            <MenuItem onClick={handleClick}>LogOut</MenuItem>
                         </Menu>
                     </FlexBetween>
                 </FlexBetween>
