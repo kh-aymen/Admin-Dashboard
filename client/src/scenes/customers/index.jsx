@@ -30,7 +30,7 @@ const Customers = () => {
             headerName: "Phone Number",
             flex: 0.5,
             renderCell: (params) => {
-                return params.value.replace(/^(\d{3})(\d{3})(\d{4})/, "($1)$2-$3");
+                return params.value.replace(/^(\d{3})(\d{3})(\d{4})/, "($1)$2-$3")
             },
         },
         {
@@ -48,7 +48,7 @@ const Customers = () => {
             headerName: "Role",
             flex: 0.5,
         },
-    ];
+    ]
 
     return (
         <Box m="1.5rem 2.5rem">
