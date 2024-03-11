@@ -14,7 +14,7 @@ import Overview from './scenes/overview'
 import Daily from './scenes/daily'
 import Monthly from './scenes/monthly'
 import BreakDown from "./scenes/breakdown"
-
+import Admin from './scenes/admin'
 
 
 const App = () => {
@@ -42,6 +42,7 @@ const App = () => {
               <Route path='/daily' element={<Daily />} />
               <Route path='/monthly' element={<Monthly />} />
               <Route path='/breakdown' element={<BreakDown />} />
+              <Route path='/admin' element={<Admin />} />
             </Route>
           </Routes>
         </ThemeProvider>

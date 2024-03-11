@@ -38,7 +38,7 @@ app.use('/sales', salesRoutes)
 // MONGOOSE SETUP //
 const PORT = process.env.PORT
 mongoose.connect(process.env.MONGODB_URL)
-    .then(() => {
+    .then(() => { 
         app.listen(PORT, () => console.log(`Server Runing:http://localhost:${PORT}`))
         // ONLY ADD DATA ONE TIME HERE //
         // User.insertMany(dataUser) 
