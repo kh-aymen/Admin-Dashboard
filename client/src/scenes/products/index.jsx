@@ -13,7 +13,7 @@ import {
 } from "@mui/material"
 import Header from "../../components/Header"
 import { useGetProductsQuery } from "../../state/api"
-import Loadin from "../../components/Loadin"
+import Loadin from "../../components/Loading"
 
 const Product = ({
     _id,
