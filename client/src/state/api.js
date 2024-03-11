@@ -5,7 +5,7 @@ const baseUrl = import.meta.env.VITE_BASE_URL
 export const api = createApi({
     baseQuery: fetchBaseQuery({ baseUrl }),
     reducerPath: 'adminApi',
-    tagTypes: ["User", "Products", "Customers", "Transactions", "geography"],
+    tagTypes: ["User", "Products", "Customers", "Transactions", "geography", "Sales"],
     endpoints: (build) => ({
         getUser: build.query({
             query: (id) => `general/user/${id}`,
@@ -30,6 +30,10 @@ export const api = createApi({
         getGeography: build.query({
             query: () => "client/geography",
             providesTags: ["geography"]
+        }),
+        getSales: build.query({
+            query: () => "sales/sales",
+            providesTags: ["Sales"]
         })
     })
 })
@@ -39,5 +43,6 @@ export const {
     useGetProductsQuery,
     useGetCustomersQuery,
     useGetTransactionsQuery,
-    useGetGeographyQuery
+    useGetGeographyQuery,
+    useGetSalesQuery
 } = api
