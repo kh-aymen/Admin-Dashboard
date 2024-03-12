@@ -18,6 +18,7 @@ import Admin from './scenes/admin'
 import Performance from './scenes/performance'
 
 
+
 const App = () => {
   const mode = useSelector(state => state.global.mode)
   const [theme, setTheme] = useState(createTheme(themeSettings(mode)))
