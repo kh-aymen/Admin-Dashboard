@@ -17,7 +17,7 @@ body,
 ::-webkit-scrollbar-track {
     background: #21295c;
 }
-
+       
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #7a7f9d;
